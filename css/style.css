@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
+
+.container {
+    margin: 0 auto;
+    max-width: 1143px;
+}
+
+.navbar {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /*раскидать*/
+    align-items: center;
+    /*по центру*/
+}
+
+.logo {
+    height: 73px;
+}
+
+.navbar_menu {
+    width: 197px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_a {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #433840;
+    text-decoration: none;
+}
+
+.navbar_a:hover {
+    color: #FEA3AC;
+}
+
+/* finish header */
+
+/*about*/
+.about {
+    background: url(../img/about.jpg) center center no-repeat;
+    position: relative;
+    margin: 0 auto;
+    /*display: none;/*отключаем*/
+}
+
+.about::before {
+    content: '';
+    background: url(../img/about-top.svg) center center;
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    top: 0;
+
+}
+
+.about::after {
+    content: "";
+    background: url(../img/about-bottom.svg) center center;
+    width: 100%;
+    height: 108px;
+    position: absolute;
+    bottom: 0;
+}
+
+.about_items {
+    padding-top: 150px;
+    padding-bottom: 135px;
+
+}
+
+.about_title {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 62px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.about_subtitle {
+    font-family: Waiting for the Sunrise;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 50px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* smoothie */
+.smoothie {
+    margin-top: 72px;
+    /* display: none; */
+}
+
+.smoothie_block {
+    display: flex;
+    /*дочерние классы встанут в ряд друг за другом в строку*/
+    max-width: 1141px;
+    margin: 0 auto;
+    /*центрируем внутри контейнера*/
+}
+
+.smoothie_items {
+    display: flex;
+    /*для применения flex-direction: column;*/
+    flex-direction: column;
+    /*ставим в столбик*/
+    justify-content: space-between;
+}
+
+.smoothie_item {
+    width: 332px;
+    min-height: 120px;
+}
+
+.smoothie_item h4 {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
+
+    color: #433840;
+    margin-bottom: 12px;
+}
+
+.smoothie_item p {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    /* or 160% */
+
+
+    color: #9A9A9A;
+}
+
+.smoothie_img {
+    margin-top: 70px;
+    margin-left: 48px;
+    margin-right: 39px;
+    max-width: 380px;
+}
+
+/* smoothie end */
+/* fruit start */
+
+.fruit {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #FEA3AC;
+    width: 1820px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    /* display: none; */
+
+}
+
+.fruit::before {
+    content: "";
+    background: url(../img/about-top.svg);
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    top: 0;
+}
+
+.fruit::after {
+    content: "";
+    background: url(../img/about-bottom.svg);
+    position: absolute;
+    width: 100%;
+    height: 108px;
+    bottom: 0;
+}
+
+.fruit_items {
+    display: flex;
+    justify-content: space-between;
+    width: 1077px;
+    height: 222px;
+
+
+}
+
+.fruit_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.fruit_img {
+    /*если не задать параметры то некоторые картинки мень и текст ниже не ровный*/
+    width: 135px;
+    height: 135px;
+}
+
+.fruit_title {
+    font-family: Waiting for the Sunrise;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 99px;
+
+    color: #DFEEB6;
+
+}
+
+.fruit_subtitle {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: #FFFFFF;
+}
+
+/* fruit finish */
+
+/* team */
+.team{
+    display: none;
+}
+.team_items {
+    max-width: 1143px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team_item {
+    display: flex;
+    width: calc(50% - 11px);
+    border-radius: 5px;
+}
+
+.team_item:nth-child(1),
+.team_item:nth-child(2) {
+    margin-bottom: 40px;
+    width: calc(50% - 11px - 165px);   
+    margin-left: 165px;
+}
+.team_img{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.team_item:nth-child(1) .team_img, .team_item:nth-child(2) .team_img{
+    margin-left: -165px;
+}
+
+.team_item:nth-child(1),
+.team_item:nth-child(4) {
+    background: #c9e3f4;
+}
+
+.team_item:nth-child(3),
+.team_item:nth-child(4) {
+    margin-bottom: 40px;
+}
+
+.team_item:nth-child(2),
+.team_item:nth-child(3) {
+    background: #DFEEB6;
+}
+
+.team_title {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 62px;
+    text-align: center;
+    color: #433840;
+}
+
+.team_subtitle {
+    font-family: Waiting for the Sunrise;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    color: #F7A1A8;
+}
+.team_data_title{
+    font-family: Quicksand;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 37px;
+
+color: #FFFFFF;
+margin-top: 74px;
+}
+.team_data_subtitle{
+    font-family: Quicksand;
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 25px;
+/* identical to box height */
+
+
+color: #433840;
+
+}
+.team_data_p{
+    font-family: Quicksand;
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 25px;
+/* or 167% */
+
+text-align: right;
+
+color: #433840;
+}
+
+
+
+/* footer */
+.footer{
+    margin: 0 auto;
+    display: none;
+}
+.footer_up {
+
+    margin-top: 150px;
+    background: url(../img/footer_brooke.jpg  ) no-repeat center;
+
+}
+
+.footer_items {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+}
+
+
+
+.footer_item h3 {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+    margin-top: 61px;
+    margin-bottom: 25px;
+}
+
+.footer_span {
+    display: flex;
+    flex-direction: column;
+}
+
+.days,
+.footer_info div a {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.footer_info div:nth-child(1) a {
+    font-weight: bold;
+}
+
+.days span {
+    color: #DFEEB6
+}
+
+.footer_ins {
+    width: 343px;
+    height: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.footer2 {
+    background: #433840;
+    height: 60px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.footer_bottom_img{
+    width: 16px;
+}
+
+
+
+
+/* адаптивная верстка */
+
+

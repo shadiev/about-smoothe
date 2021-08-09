@@ -1,0 +1,50 @@
+@media (max-width: 1156px){
+    .fruit_item{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media(max-width: 1145px){
+    .smoothie_block{
+        flex-direction: column;
+        align-items: center;
+    }
+    .smoothie_item{
+        width: 90%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .smoothie_item h4{
+        text-align: center;
+    }
+    .smoothie_item p{
+        text-align: center;
+    }
+    .smoothie_img{
+        margin-left: 0;
+        margin-right: 0;
+        min-width: 280px;
+    }
+}
+@media(max-width:916px){
+    .navbar{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .about_title{
+        font-size: 40px;
+    }
+}
+@media (max-width: 800px){
+    .fruit_items{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:664px){
+   .navbar {
+flex-direction: column;
+    }
+    .logo_a{
+        order: -1;/*order работает если родителю задан displey flex*/
+    }
+}
